@@ -1,0 +1,59 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Private anonymity scan terms. Do not commit this file.
+.anonymous_terms.local
+private_terms*.txt
+
+# Generated experiment artifacts
+data/prompts/
+data/private/
+finite_response_sail/cache/
+finite_response_sail/cache_*/
+finite_response_sail/results/
+finite_response_sail/results_*/
+finite_response_sail/logs/
+reports/
+logs/
+runs/
+outputs/
+checkpoints/
+wandb/
+tensorboard/
+
+# Large model/data artifacts
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.npz
+
+# Scheduler and process logs
+slurm-*.out
+nohup.out
+*.log
+
+# Notebook outputs/checkpoints
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Secrets and keys
+id_rsa*
+id_ed25519*
+*.pem
+*.key
+*.crt

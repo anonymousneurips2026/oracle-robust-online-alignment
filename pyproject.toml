@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oracle-robust-online-alignment-anonymous"
+version = "0.1.0"
+description = "Anonymous finite-response experiments for oracle-robust online alignment."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "torch>=2.2",
+  "transformers>=4.40",
+  "rouge-score>=0.1.2",
+  "matplotlib>=3.7",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["finite_response_sail*"]
+
+[tool.pytest.ini_options]
+testpaths = ["finite_response_sail/tests"]
+pythonpath = ["."]

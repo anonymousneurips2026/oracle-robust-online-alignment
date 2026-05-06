@@ -1,0 +1,8 @@
+numpy>=1.24
+scipy>=1.10
+torch>=2.2
+transformers>=4.40
+rouge-score>=0.1.2
+matplotlib>=3.7
+PyYAML>=6.0
+pytest>=8.0
