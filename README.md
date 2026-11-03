@@ -1,6 +1,11 @@
 # Oracle-Robust Online Alignment for Large Language Models
 
-This repository is anonymized for double-blind review. Author information will be restored after the review period.
+Code accompanying the NeurIPS 2026 paper.
+
+**Authors:**
+- Zimeng Li — Purdue University
+- Mudit Gaur — The Ohio State University
+- Vaneet Aggarwal — Purdue University
 
 This code supports the finite-response experiments for oracle-robust online SAIL. The core objective is the SAIL pairwise likelihood plus the robust sensitivity penalty $R(\theta)=E_{z \sim d_\theta}[|h_\theta(z)|]$, with penalty weight $\lambda=\rho_{\mathrm{alg}}\beta$.
 
@@ -28,8 +33,7 @@ docs/
   CACHE_GENERATION.md               cache schema and generation instructions
 ```
 
-Generated caches, model outputs, result directories, logs, and checkpoints are intentionally excluded from the anonymous release.
-For anonymous upload, initialize a fresh repository from this `code/` directory rather than publishing any original repository history.
+Generated caches, model outputs, result directories, logs, and checkpoints are not included in this repository.
 
 ## Environment Setup
 
@@ -189,4 +193,15 @@ PYTHONPATH=. python -m finite_response_sail._true_to_worst_stress_eval_kl \
 
 ## Citation And License
 
-This anonymous release is for review. Please cite the anonymous submission title during the review period. License terms can be finalized with author information after review.
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@inproceedings{li2026oraclerobust,
+  title     = {Oracle-Robust Online Alignment for Large Language Models},
+  author    = {Li, Zimeng and Gaur, Mudit and Aggarwal, Vaneet},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026}
+}
+```
